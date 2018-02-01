@@ -15,15 +15,29 @@ function getTheWord(){
     
 }
 function getLetter(){
-    // var e = document.getElementById("1").innerHTML = 'E';
-    // var m = document.getElementById("2").innerHTML = 'M';
-    // var i = document.getElementById("3").innerHTML = 'I';
-    // var r = document.getElementById("4").innerHTML = 'R';
-    // console.log(e);
-    // console.log(m);
+    var e,m,i,r;
+    
+
     var s = document.getElementById("secret1").value;
     console.log(s);
-    console.log(value);
+
+    if(document.getElementById("secret1")!== e || m || i || r){
+        GetValue();
+    }else{
+        if(e){
+            document.getElementById("1").innerHTML = 'E';
+        }
+        else if(m){
+            document.getElementById("2").innerHTML = 'M';
+        }
+        else if(i){
+            document.getElementById("3").innerHTML = 'I';
+        }
+        else if (r){
+            document.getElementById("4").innerHTML = 'R';
+        }
+    }
+
 }
 
 
